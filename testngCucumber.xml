@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" >
+	<listeners>
+		<listener class-name="Application.SampleProject.listeners" />
+	</listeners>
+	<test name="Validate Main Menu">
+		<classes>
+			<class name="Application.SampleProject.ValidateMainMenu" />
+		</classes>
+	</test>
+
+	<test name="Validate Title">
+		<classes>
+			<class name="Application.SampleProject.validateTitle" />
+		</classes>
+	</test>
+	<test name="Check login scenarios">
+		<classes>	
+			<class name="Application.SampleProject.LoginScenarios" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

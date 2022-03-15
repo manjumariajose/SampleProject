@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="Application.SampleProject.listeners"/>
+  </listeners>
+  <test thread-count="5" name="Check login scenarios(failed)" parallel="tests">
+    <classes>
+      <class name="Application.SampleProject.HomePage">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="browserClose"/>
+          <include name="homepageNavigation"/>
+        </methods>
+      </class> <!-- Application.SampleProject.HomePage -->
+    </classes>
+  </test> <!-- Check login scenarios(failed) -->
+  <test thread-count="5" name="Validate Title(failed)" parallel="tests">
+    <classes>
+      <class name="Application.SampleProject.validateTitle">
+        <methods>
+          <include name="browserClose"/>
+          <include name="openBrowser"/>
+          <include name="homepageNavigation"/>
+        </methods>
+      </class> <!-- Application.SampleProject.validateTitle -->
+    </classes>
+  </test> <!-- Validate Title(failed) -->
+  <test thread-count="5" name="Validate Main Menu(failed)" parallel="tests">
+    <classes>
+      <class name="Application.SampleProject.ValidateMainMenu">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="browserClose"/>
+          <include name="homepageNavigation"/>
+        </methods>
+      </class> <!-- Application.SampleProject.ValidateMainMenu -->
+    </classes>
+  </test> <!-- Validate Main Menu(failed) -->
+</suite> <!-- Failed suite [Suite] -->
